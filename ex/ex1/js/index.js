@@ -1,0 +1,1 @@
+window.alert('Minha primeira pagina com javascript')
