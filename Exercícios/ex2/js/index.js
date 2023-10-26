@@ -1,0 +1,1 @@
+window.prompt('Qual o seu nome?')
