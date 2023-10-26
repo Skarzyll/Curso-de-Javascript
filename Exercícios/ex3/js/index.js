@@ -1,5 +1,5 @@
-var n1 = Number.parseInt(window.prompt('Digit outro número'))
-var n2 = Number.parseInt(window.prompt('Digit outro número'))
+var n1 = Number.parseInt(window.prompt('Digit outro número')) //Inteiro
+var n2 = Number.parseInt(window.prompt('Digit outro número')) //Inteiro
 
 var s = n1 + n2
 
