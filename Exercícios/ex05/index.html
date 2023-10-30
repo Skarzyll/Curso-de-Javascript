@@ -3,10 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/index.js"></script>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            border-radius: 20px;
+        }
+    </style>
     <title>Exercírcio 5</title>
 </head>
 <body>
-    
+    <p id="p1">Estou aguardando</p>
+    <div id = "div1"></div>
+    <script>
+        document.getElementById("p1").style.color = "red"
+        document.body.style.background = 'black'
+        document.getElementById('div1').style.backgroundColor = 'green'
+
+        var nomehtml = document.getElementById('p1')
+        const nome = window.prompt('Diga seu nome')
+        nomehtml.innerHTML = `Olá, ${nome}. Bem-vindo!`
+    </script>
 </body>
 </html>
