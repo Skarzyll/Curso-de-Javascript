@@ -23,7 +23,25 @@
         <p>Esperando...</p>
     </div>
     <script>
-        
+        var divdin = document.getElementById('din')
+
+        divdin.addEventListener('click', clickdin)
+        divdin.addEventListener('mouseenter', mouseenterdin)
+        divdin.addEventListener('mouseout', mouseoutdin)
+
+        function clickdin() {
+        divdin.style.backgroundColor = 'black'
+        divdin.style.color = 'white'
+        }
+
+        function mouseenterdin() {
+        divdin.style.backgroundColor = '#00000094'
+        }
+
+        function mouseoutdin() {
+        divdin.style.backgroundColor = 'azure'
+        divdin.style.color = 'black'
+        }
     </script>
 </body>
 </html>
