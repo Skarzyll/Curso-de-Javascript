@@ -14,12 +14,13 @@
             text-align: center;
             align-items: center;
             justify-content: center;
+            user-select: none;
         }
     </style>
     <title>Exercírcio 6</title>
 </head>
 <body>
-    <div id="din" ondblclick="dblclickdin()">
+    <div id="din">
         <p>Esperando...</p>
     </div>
     <script>
@@ -28,7 +29,7 @@
         divdin.addEventListener('click', clickdin)
         divdin.addEventListener('mouseenter', mouseenterdin)
         divdin.addEventListener('mouseout', mouseoutdin)
-        
+        divdin.addEventListener('dblclick', dblclickdin)
 
         function clickdin() {
             divdin.style.backgroundColor = 'black'
