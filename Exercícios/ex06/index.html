@@ -19,7 +19,7 @@
     <title>Exercírcio 6</title>
 </head>
 <body>
-    <div id="din" >
+    <div id="din" ondblclick="dblclickdin()">
         <p>Esperando...</p>
     </div>
     <script>
@@ -28,19 +28,25 @@
         divdin.addEventListener('click', clickdin)
         divdin.addEventListener('mouseenter', mouseenterdin)
         divdin.addEventListener('mouseout', mouseoutdin)
+        
 
         function clickdin() {
-        divdin.style.backgroundColor = 'black'
-        divdin.style.color = 'white'
+            divdin.style.backgroundColor = 'black'
+            divdin.style.color = 'white'
+        }
+
+        function dblclickdin() {
+            divdin.style.backgroundColor = 'white'
+            divdin.style.color = 'black'
         }
 
         function mouseenterdin() {
-        divdin.style.backgroundColor = '#00000094'
+            divdin.style.backgroundColor = '#00000094'
         }
 
         function mouseoutdin() {
-        divdin.style.backgroundColor = 'azure'
-        divdin.style.color = 'black'
+            divdin.style.backgroundColor = 'azure'
+            divdin.style.color = 'black'
         }
     </script>
 </body>
