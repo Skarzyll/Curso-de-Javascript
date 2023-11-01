@@ -1,9 +1,13 @@
-var vel = 50.5
+function btn() {
+    var vel = document.getElementById('inpnumber')
+    var veln = Number(vel.value) 
+    var d = document.getElementById('div')
 
-if (vel >= 100) {
-    console.log(`Sua velocidade é de ${vel}km/h e está acima do limite de velocidade. Você foi multado!`)
-} if (vel <= 20) {
-    console.log(`Sua velocidade é de ${vel}km/h e você está abaixo da velocidade permitida. Você foi multado!`)
-} else {
-    console.log(`Você está a ${vel}km/h e está na velocidade permitida.`)
+    if (veln >= 100) {
+        d.innerHTML = `Sua velocidade é de ${veln}km/h e está acima do limite de velocidade. Você foi multado!`
+    } if (veln <= 20) {
+        d.innerHTML = `Sua velocidade é de ${veln}km/h e você está abaixo da velocidade permitida. Você foi multado!`
+    } else {
+        d.innerHTML = `Você está a ${veln}km/h e está na velocidade permitida.`
+    }  
 }
