@@ -5,7 +5,7 @@ function btn() {
 
     if (veln >= 100) {
         d.innerHTML = `Sua velocidade é de ${veln}km/h e está acima do limite de velocidade. Você foi multado!`
-    } if (veln <= 20) {
+    } else if (veln <= 20) {
         d.innerHTML = `Sua velocidade é de ${veln}km/h e você está abaixo da velocidade permitida. Você foi multado!`
     } else {
         d.innerHTML = `Você está a ${veln}km/h e está na velocidade permitida.`
