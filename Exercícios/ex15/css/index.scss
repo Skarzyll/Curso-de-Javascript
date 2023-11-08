@@ -1,5 +1,43 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg, rgba(0, 0, 255, 0.801), rgba(255, 0, 0, 0.788));
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding: 50px;
+}
+
+section {
+    margin: auto;
+    background-color: white;
+    width: 700px;
+    height: 300px;
+    color: black;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+div {
+    text-align: center;
+    margin: 10px;
+}
+
+#img {
+    width: 300px;
+    height: 300px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 50px;
 }
