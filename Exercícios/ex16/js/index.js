@@ -9,6 +9,13 @@ function verificar() {
     } else {
         var rad = document.getElementsByName('radsex')
         var idade = ano - Number(inpano.value)
-        res.innerHTML = `Idade calculada: ${idade} anos`
-    }
+        var genero = ''
+        if (rad[0].checked) {
+            genero = 'masculino'
+        } else {
+            genero = 'feminino'
+        }
+        res.style.textAlign = 'center'
+        res.innerHTML = `${genero} ${idade}`
+    } 
 }
