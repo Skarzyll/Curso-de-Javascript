@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(45deg, rgba(0, 0, 255, 0.87), rgba(255, 0, 0, 0.87));
+  width: 100vw;
+  height: 100vh;
+}
+body header {
+  text-align: center;
+  color: white;
+  padding: 50px;
+}
+body section {
+  background-color: white;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  width: 700px;
+  height: 400px;
+  margin: auto;
+  border-radius: 10px;
+}
+body section p {
+  padding: 10px;
+}
+body section button {
+  margin: 10px;
+  padding: 5px;
+}
+body footer {
+  color: white;
+  text-align: center;
+  padding: 50px;
+}/*# sourceMappingURL=index.css.map */

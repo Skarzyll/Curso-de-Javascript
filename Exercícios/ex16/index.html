@@ -8,11 +8,24 @@
 </head>
 <body>
     <header>
-        <h1></h1>
+        <h1>Identificador de Pessoas</h1>
     </header>
     <section>
-        <div></div>
-        <div></div>
+        <div>
+            <p>Ano de nascimento:
+                <input type="number" name="inp" id="inpdate" title="aaa" placeholder="aaa">
+            </p>
+            <p>Sexo: 
+                <input type="radio" class="radiosex" name="radsex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" class="radiosex" name="radsex" id="fem">
+                <label for="fem">Feminina</label>
+            </p>
+            <button onclick="verificar()">formar</button>
+        </div>
+        <div >
+            <p id="res">Preencha os dados acima!</p>
+        </div>
     </section>
     <footer>
         <p>&copy;CusoemVideo</p>
