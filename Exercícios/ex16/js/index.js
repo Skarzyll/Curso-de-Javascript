@@ -18,28 +18,45 @@ function verificar() {
 
             if (idade >= 0 && idade < 10) {
                 //criança
+                img.setAttribute('src', 'images/crianca-homem.png')
+
             } else if (idade < 21) {
-                //jovem    
+                //jovem
+                img.setAttribute('src', 'images/crianca-homem.png')
+
             } else if (idade < 50) {
                 //adulto
+                img.setAttribute('src', 'images/crianca-homem.png')
+                
             } else {
                 //velho
+                img.setAttribute('src', 'images/crianca-homem.png')
+
             }
-        } else {
+
+        } else if (rad[1].checked) {
             genero = 'feminino'
 
             if (idade >= 0 && idade < 10) {
                 //criança
+                img.setAttribute('src', 'images/crianca-mulher.png')
+
             } else if (idade < 21) {
-                //jovem    
+                //jovem   
+                img.setAttribute('src', 'images/crianca-mulher.png')
+
             } else if (idade < 50) {
                 //adulto
+                img.setAttribute('src', 'images/crianca-mulher.png')
+
             } else {
                 //velho
+                img.setAttribute('src', 'images/crianca-mulher.png')
+
             }
         } 
         res.style.textAlign = 'center'
-        res.innerHTML = `${genero} ${idade}`
+        res.innerHTML = `Dectamos uma pessoa de genero ${genero} com ${idade} anos.<br>`
         res.appendChild(img)
     } 
 }
