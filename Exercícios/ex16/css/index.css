@@ -10,15 +10,19 @@ body {
   height: 100vh;
 }
 body header {
+  display: flex;
+  align-items: center;
   text-align: center;
+  justify-content: center;
   color: white;
   padding: 10px;
+  height: 100px;
 }
 body section {
   background-color: white;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
   width: 700px;
-  max-height: 600px;
+  max-height: 100%;
   margin: auto;
   border-radius: 10px;
 }
@@ -31,6 +35,10 @@ body section button {
 }
 body footer {
   color: white;
+  display: flex;
+  align-items: center;
   text-align: center;
+  justify-content: center;
   padding: 20px;
+  height: 100px;
 }/*# sourceMappingURL=index.css.map */
