@@ -22,7 +22,7 @@ body section {
   background-color: white;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
   width: 700px;
-  max-height: 100%;
+  max-height: 460px;
   margin: auto;
   border-radius: 10px;
 }
