@@ -1,1 +1,24 @@
-/*# sourceMappingURL=index.css.map */
+body {
+  background-color: rgb(28, 146, 155);
+  color: white;
+}
+body header {
+  margin: auto;
+  text-align: center;
+}
+body section {
+  margin: auto;
+  background-color: white;
+  color: black;
+  width: 700px;
+  max-height: 200px;
+  padding: 5px;
+  border-radius: 10px;
+}
+body section button {
+  margin-bottom: 5px;
+}
+body footer {
+  margin: auto;
+  text-align: center;
+}/*# sourceMappingURL=index.css.map */
