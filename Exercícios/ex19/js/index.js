@@ -22,6 +22,17 @@ function contar() {
             res.innerHTML += `${c} `
         }
 
+    } else if (inicio.value.length > fim.value.length) {
+        res.innerHTML = 'Contando: '
+
+        let i = Number(inicio.value)
+        let f = Number(fim.value)
+        let p = Number(passo.value)
+
+        for (let c = i; c >= f; c -= p) {
+            res.innerHTML += `${c} `
+        }
+
     } else {
         res.innerHTML = 'Contando: '
 
