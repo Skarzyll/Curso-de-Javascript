@@ -4,15 +4,15 @@ function btn() {
     
     let a = Number(inp.value)
 
-    if (a === '') {
+    if (inp.value.length == '') {
         window.alert('Valor invalido!')
 
     } else {
-
+        res.innerHTML = ''
+        
         for (let i = 1; i <= 10; i++) {
             r = a * i
             res.innerHTML += `${a} X ${i} =  ${r}<br>`
         }
-
     }
 }
