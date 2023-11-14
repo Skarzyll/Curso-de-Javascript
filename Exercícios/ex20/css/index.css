@@ -11,12 +11,17 @@ body section {
   background-color: white;
   color: black;
   width: 700px;
-  max-height: 200px;
+  max-height: 500px;
   padding: 5px;
   border-radius: 10px;
 }
 body section button {
   margin-bottom: 5px;
+}
+body section div#res {
+  height: 200px;
+  max-width: 200px;
+  overflow-y: scroll;
 }
 body footer {
   margin: auto;
