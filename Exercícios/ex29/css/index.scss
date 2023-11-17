@@ -1,0 +1,34 @@
+body {
+    background-color: rgb(28, 146, 155);
+    color: white;
+
+    header {
+        margin: auto;
+        text-align: center;
+    }
+
+    section {
+        margin: auto;
+        background-color: white;
+        color: black;
+        width: 700px;
+        max-height: 500px;
+        padding: 5px;
+        border-radius: 10px;
+
+        button {
+            margin-bottom: 5px;
+        }
+
+        div#res {
+            height: 200px;
+            max-width: 200px;
+            overflow-y: scroll;
+        }
+    }
+
+    footer {
+        margin: auto;
+        text-align: center;
+    }
+}
