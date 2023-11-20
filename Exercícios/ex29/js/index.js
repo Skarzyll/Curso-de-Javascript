@@ -51,7 +51,7 @@ function finish() {
         res2.innerHTML += `A média dos valores digitados é ${nmbs.reduce(myDiv, 0)}<br>`
 
         function myDiv(valDiv, total2) {
-            return (valDiv + Math.round(total2)) / 5
+            return valDiv + Math.round(total2) / tamanho
         }
     }
 }
