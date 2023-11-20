@@ -9,7 +9,7 @@ function add() {
 
     } else {
         res.innerHTML = ''
-        nmbs.push(inpn.value)
+        nmbs.push(Number(inpn.value))
 
         for (const m in nmbs) {
             res.innerHTML += `valor ${nmbs[m]} adicionado.<br>`
@@ -19,9 +19,9 @@ function add() {
 }
 
 function finish() {
-    if (res2.innerHTML == '') {
+    if (nmbs == 0) {
         alert('Adicione valores antes de finalizar!')
-        
+
     } else {
         let tamanho = nmbs.length
         res2.innerHTML = `Ao todo, temos ${tamanho} números cadastrados<br>`
