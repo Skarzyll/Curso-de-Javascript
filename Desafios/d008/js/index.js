@@ -18,13 +18,16 @@ function Calc() {
         res.appendChild(res2)
 
         res.innerHTML += `O preço original era ${psemd.toLocaleString('pt-br', {
-            style: 'currency', currency: 'BRL'
+            style: 'currency',
+            currency: 'BRL'
         })}.<br>`
         res.innerHTML += `Você acaba de ganhar ${pcomd.toLocaleString('pt-br', {
-            style: 'currency', currency: 'BRL'
+            style: 'currency',
+            currency: 'BRL'
         })} de desconto (-10%).<br>`
         res.innerHTML += `No fim, você vai pagar ${ptotal.toLocaleString('pt-br', {
-            style: 'currency', currency: 'BRL'
+            style: 'currency',
+            currency: 'BRL'
         })} no produto ${nameP}.`
     }
 }
