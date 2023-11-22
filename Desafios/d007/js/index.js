@@ -13,12 +13,14 @@ function Convert() {
         let dol = reais * 0.203842
 
         res2.innerHTML = `O seu ${reais.toLocaleString('pt-br', {
-            style: 'currency', currency: 'BRL'
+            style: 'currency',
+            currency: 'BRL'
         })}, corresponde a..`
         res.appendChild(res2)
 
         res.innerHTML += `${dol.toLocaleString('en-us', {
-            style: 'currency', currency: 'USD'
+            style: 'currency',
+            currency: 'USD'
         })} (dólares).`
     }
 }
