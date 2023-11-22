@@ -10,15 +10,15 @@ function Convert() {
     } else {
         res.innerHTML = ''
         let reais = Number(prom)
-        let dol = reais * 0.20
+        let dol = reais * 0.203842
 
-        res2.innerHTML = `O seu R$ ${reais.toLocaleString('pt-br', {
+        res2.innerHTML = `O seu ${reais.toLocaleString('pt-br', {
             style: 'currency', currency: 'BRL'
         })}, corresponde a..`
         res.appendChild(res2)
 
         res.innerHTML += `${dol.toLocaleString('en-us', {
             style: 'currency', currency: 'USD'
-        })}`
+        })} (dólares).`
     }
 }
