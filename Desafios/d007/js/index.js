@@ -12,9 +12,13 @@ function Convert() {
         let reais = Number(prom)
         let dol = reais * 0.20
 
-        res2.innerHTML = `O seu R$ ${reais.toLocaleString('pt-br')}, corresponde a..`
+        res2.innerHTML = `O seu R$ ${reais.toLocaleString('pt-br', {
+            style: 'currency', currency: 'BRL'
+        })}, corresponde a..`
         res.appendChild(res2)
 
-        res.innerHTML += `${dol.toLocaleString('pt-br')} US$`
+        res.innerHTML += `${dol.toLocaleString('en-us', {
+            style: 'currency', currency: 'USD'
+        })}`
     }
 }
