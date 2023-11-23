@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            border: 2px solid black;
+            margin-top: 5px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid rgba(0, 0, 0, 0.301);
+            padding: 6px;
+        }
+    </style>
+    <title>Desafio situação do aluno</title>
+</head>
+<body>
+    <h1>Situação do aluno</h1>
+    <button onclick="Enter()">Entrar com as notas</button>
+    <table>
+        <tr>
+            <th><strong>Média</strong></th>
+            <th><strong>Situação</strong></th>
+        </tr>
+        <tr>
+            <td>Abaixo de 3,0</td>
+            <td>APROVADO</td>
+        </tr>
+        <tr>
+            <td>Entre 3,0 e 6,0</td>
+            <td>RECUPERÇÃO</td>
+        </tr>
+        <tr>
+            <td>Acima de 6,0</td>
+            <td>APROVADO</td>
+        </tr>
+    </table>
+    <p id="res">Click no botão acima para informar as notas do aluno</p>
+    <script src="js/index.js"></script>
+</body>
+</html>
