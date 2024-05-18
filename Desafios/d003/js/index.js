@@ -1,4 +1,4 @@
-function funcao() {
+let funcao = () => {
     let num = prompt('Digite um número inteiro qualquer.')
     let n = Number(num)
     let menor = n - 1
