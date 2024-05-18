@@ -1,4 +1,4 @@
-function Calc() {
+let Calc = () => {
     let produto = prompt('Que produto você está comprando?')
     let valProduto = prompt(`Quanto custa o(a) ${produto} que você está comprando?`)
     let valDado = prompt(`Qual foi o valor que você deu para pagar o(a) ${produto}?`)
