@@ -1,10 +1,12 @@
+import menssagem from "./module"
+
 let res = document.getElementById('res')
 let elem = document.createElement('h2')
 
 function Calc() {
     let valMetros = prompt('Digite uma distância em metros (m).')
 
-    if (valMetros == 0 || valMetros.value == '') {
+    if (valMetros === 0 || valMetros.value == '') {
         alert('Valor inválido. Por favor, tente novamente.')
 
     } else {
@@ -28,3 +30,8 @@ function Calc() {
         res.innerHTML += `${valMm.toLocaleString('pt-BR')} milímetros (mm)`
     }
 }
+
+
+
+
+document.getElementById("mod").innerHTML = menssagem();
