@@ -55,7 +55,7 @@ function pegarx(numbers, callback) {
 
 
 
-const array = [1,2,3,4,5,-5,-4,-3,-2,-1]
+/* const array = [1,2,3,4,5,-5,-4,-3,-2,-1]
 
 const negarray = pegarnum(array, (x) => x <= 0)
 const posiarray = pegarnum(array, (x) => x >= 0)
@@ -72,4 +72,25 @@ function pegarnum(numbers, callback) {
 }
 
 console.log('array negativo = ' + negarray);
-console.log('array negativo = ' + posiarray);
+console.log('array negativo = ' + posiarray); */
+
+
+
+let mypro = new Promise((resolve, reject) => {
+    let x = 0
+
+    if (x == 0) {
+        resolve('ok')
+        
+    } else {
+        reject('not ok')
+    }
+})
+
+mypro
+    .then(res => {
+        console.log(res);
+    })
+    .catch(erro => {
+        console.error(erro);
+    })
