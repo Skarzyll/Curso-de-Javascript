@@ -93,4 +93,17 @@ mypro
     })
     .catch(erro => {
         console.error(erro);
-    })
+    });
+
+
+try {
+    (
+        function () {
+            let c = 'caio'
+        }
+    )()
+    console.log(c);
+    
+} catch (error) {
+    console.error(error);
+}
