@@ -76,7 +76,7 @@ console.log('array negativo = ' + posiarray); */
 
 
 
-let mypro = new Promise((resolve, reject) => {
+/* let mypro = new Promise((resolve, reject) => {
     let x = 0
 
     if (x == 0) {
@@ -93,17 +93,26 @@ mypro
     })
     .catch(erro => {
         console.error(erro);
-    });
+    }); */
 
-
+//
 try {
-    (
+    /* (
         function () {
             let c = 'caio'
         }
-    )()
-    console.log(c);
-    
+    )() */
+
+    fetch('https://api.adviceslip.com/advice')
+    .then(response => response.json())
+    .then(resjson => resjson.slip)
+    .then(slip => {
+        let id = slip.id
+        let advice = slip.advice
+        
+        console.log(`${id}: "${advice}"`);
+    })
+
 } catch (error) {
     console.error(error);
 }
