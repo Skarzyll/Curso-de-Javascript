@@ -25,6 +25,8 @@
 
 console.log(expoent); */
 
-function a (...arguments) {return arguments.reduce((a, b) => a += b )}
+function a (...arguments) {
+    return arguments.reduce((a, b) => a += b )
+}
 
 console.log(a(1, 2, 3, 4));
