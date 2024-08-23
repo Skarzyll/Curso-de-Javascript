@@ -1,4 +1,4 @@
-const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+/* const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] */
 
 /* const newarray = array.map(item => {
     if (item % 2 == 0) {
@@ -19,8 +19,12 @@ const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 //const newarray = array.find(item => item % 2 == 0) //Retornar o PRIMEIRO item par
 //const newarray = array.findIndex(item => item % 2 == 0) //Retornar o INDICE do PRIMEIRO item par
 
-const expoent = array.reduce((acc, item) => {
+/* const expoent = array.reduce((acc, item) => {
     return acc * item
 }, 1)
 
-console.log(expoent);
+console.log(expoent); */
+
+function a (...arguments) {return arguments.reduce((a, b) => a += b )}
+
+console.log(a(1, 2, 3, 4));
