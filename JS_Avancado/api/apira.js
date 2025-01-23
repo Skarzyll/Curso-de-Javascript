@@ -12,7 +12,7 @@ import {
 		webApiKey: webApiKey,
 	});
 
-	let offcount = 0;
+	let offcount = 500;
 
 	const UWTP = await getUserWantToPlayList(authorization, {
 		username: username,
