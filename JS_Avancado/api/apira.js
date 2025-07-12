@@ -1,5 +1,6 @@
 import {
 	buildAuthorization,
+	getGameList,
 	getUserWantToPlayList,
 } from "@retroachievements/api";
 
@@ -20,11 +21,11 @@ import {
 		offset: offcount,
 	});
 
-	const filtergames = UWTP.results.filter((game) => game.consoleName.includes("PlayStation"));
+	const filtergames = UWTP.results.filter((game) => game.consoleName.includes("PlayStation 2"));
 
 	console.log(
 		filtergames.map((game) => {
-			return 'id: ' + game.id + " " + game.title + " - " + game.consoleName
+			return 'id: ' + game.id + " - " + game.title + " - " + game.consoleName
 		})
 	);
 })();
